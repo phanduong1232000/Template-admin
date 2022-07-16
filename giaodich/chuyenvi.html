@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Dashboard</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../dist/css/custom.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake" src="../dist/img/logo.png" alt="AdminLTELogo" height="60" width="60">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light bg-background">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i
+                            class="fas fa-bars text-white"></i></a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search text-white"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                        <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4 bg-sidebar">
+            <!-- Brand Logo -->
+            <a href="../index.html" class="brand-link img-logo">
+                <img src="../dist/img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+
+                        <li class="nav-item my-2">
+                            <a href="../index.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Menu
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item my-2">
+                            <a href="../wallet.html" class="nav-link">
+                                <i class="nav-icon fas fa-wallet"></i>
+                                <p>
+                                    Crypto Wallet
+                                    <span class="right badge badge-danger animation">New</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item my-2">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Đơn Hàng
+                                    <i class="fas fa-angle-left right"></i>
+                                    <span class="badge badge-info right">4</span>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item my-2">
+                                    <a href="../order/goi-daily.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Chọn gói đại lý</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../order/dat-sanpham.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Đặt sản phẩm</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item my-2">
+                                    <a href="../order/lichsu.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Lịch sử đặt gói</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../order/sanpham-so.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Đặt SP số học</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item my-2">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <p>
+                                    Doanh số
+                                    <i class="right fas fa-angle-left"></i>
+                                    <span class="badge badge-info right">3</span>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item my-2">
+                                    <a href="../doanhso/doanhso-nhom.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Doanh số nhóm</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../doanhso/dangky.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Đăng kí đại lý</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../doanhso/lienket.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Link kinh doanh</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item my-2">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-exchange-alt"></i>
+                                <p>
+                                    Giao dịch
+                                    <i class="fas fa-angle-left right"></i>
+                                    <span class="badge badge-info right">6</span>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item my-2">
+                                    <a href="../giaodich/chuyenvi.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Chuyển ví</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../giaodich/chuyennoibo.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Chuyển nội bộ</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../giaodich/thanhkhoan.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Thanh khoản</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../giaodich/slider.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Sliders</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../giaodich/doiqua.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Đổi quà tri ân</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../giaodich/lichsu.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Lịch sử giao dịch</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item my-2">
+                            <a href="../thongbao.html" class="nav-link">
+                                <i class="nav-icon fas fa-bell"></i>
+                                <p>
+                                    Thông báo
+                                    <span class="right badge badge-warning animation">Hot</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item my-2 mb-5">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-edit"></i>
+                                <p>
+                                    Cá nhân
+                                    <i class="fas fa-angle-left right"></i>
+                                    <span class="badge badge-info right">4</span>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item my-2">
+                                    <a href="../canhan/thongtin.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Thông tin cá nhân</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../canhan/2fa.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Bảo mật 2 bước</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../canhan/doimatkhau.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Đổi mật khẩu</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <a href="../index.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Đăng xuất</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content====================================================== -->
+        <div class="content-wrapper bg-background-main">
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <!-- Small boxes (Stat box) -->
+                    <div class="row p-4 bg-white my-4 mx-1 rounded border justify-content-center align-items-center">
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-12">
+                            <!-- small box -->
+                            <div class="small-box bg-success bg-background">
+
+                                <div class="d-flex justify-content-center p-4 align-items-center">
+                                    <img src="../dist/img/logo.png" class="img-fluid box1" alt="">
+                                    <div class="content-box1">
+                                        <h2>Dương Đẹp Trai</h2>
+
+                                        <p><i class="fas fa-check"></i> Đã kích hoạt</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center custom-code">
+                                    <div class="boxed">
+                                        <div class="boxed-child">A00</div>
+                                    </div>
+                                    <div class="boxed">
+                                        <div class="boxed-child">AB00</div>
+                                    </div>
+                                    <div class="boxed">
+                                        <div class="boxed-child">B00</div>
+                                    </div>
+                                    <div class="boxed">
+                                        <div class="boxed-child">C100</div>
+                                    </div>
+                                    <div class="boxed">
+                                        <div class="boxed-child">D00</div>
+                                    </div>
+                                    <div class="boxed">
+                                        <div class="boxed-child">E00</div>
+                                    </div>
+                                    <div class="boxed">
+                                        <div class="boxed-child">F00</div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class=" col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-success bg-background">
+                                <div class="inner inner-box">
+                                    <p>Ví Chính</p>
+                                    <h3>150.000</h3>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-wallet"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">Xem thêm <i
+                                        class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class=" col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-success bg-background">
+                                <div class="inner inner-box">
+                                    <p>Ví Mua Hàng</p>
+                                    <h3>150.000</h3>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">Xem thêm <i
+                                        class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class=" col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-success bg-background">
+                                <div class="inner inner-box">
+                                    <p>Ví Năng Động</p>
+                                    <h3>150.000</h3>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-luggage-cart"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">Xem thêm <i
+                                        class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                    </div>
+                    <!-- /.row -->
+                    <!-- Main row ===========================================================================================-->
+                    <section class="content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="ribbon-wrapper ribbon-lg">
+                                                <div class="ribbon bg-success">Trí tuệ tự nhiên</div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+                                                    <p>Chuyển tiền giữa các tài khoản của bạn</p>
+                                                    <div class="form-group">
+                                                        <label>Chọn tài khoản nguồn</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i
+                                                                        class="fas fa-credit-card"></i></span>
+                                                            </div>
+                                                            <select name="ctl27$dlWalletFrom" class="form-control">
+                                                                <option selected="selected" value="1">Tài khoản chính
+                                                                </option>
+                                                                <option value="2">Tài khoản doanh số cá nhân</option>
+                                                                <option value="3">Tài khoản doanh số đội nhóm</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Số dư tài khoản</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i
+                                                                        class="fas fa-credit-card"></i></span>
+                                                            </div>
+                                                            <input name="ctl27$txtWallet2" type="text" value="0"
+                                                                readonly="readonly" id="ctl27_txtWallet2"
+                                                                class="form-control" style="color:Blue;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Chọn tài khoản đích (*)</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i
+                                                                        class="fas fa-credit-card"></i></span>
+                                                            </div>
+                                                            <select name="ctl27$dlWalletTo" id="ctl27_dlWalletTo"
+                                                                class="form-control">
+                                                                <option selected="selected" value="1">Tài khoản chính
+                                                                </option>
+                                                                <option value="2">Tài khoản doanh số cá nhân</option>
+                                                                <option value="3">Tài khoản doanh số đội nhóm</option>
+                                                                <option value="5">Tài khoản mua hàng</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Số tiền chuyển (*)</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i
+                                                                        class="fa fa-usd">$</i></span>
+                                                            </div>
+                                                            <input type="text"
+                                                                maxlength="14" id="ctl27_txtAmountTransfer"
+                                                                class="form-control"
+                                                               >
+                                                        </div>
+                                                    </div>
+                                                    <div id="ctl27_dTFA2" class="form-group">
+                                                        <label>TFA (2FA Google Authentication)</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i
+                                                                        class="fa fa-usd">*</i></span>
+                                                            </div>
+                                                            <input name="ctl27$txtTFA2" type="password" maxlength="6"
+                                                                id="ctl27_txtTFA2" class="form-control"
+                                                                placeholder="Nhập 6 kí tự từ Google Authentication">
+                                                        </div>
+                                                    </div>
+                                                    <center>
+                                                        <input type="submit" name="ctl27$btnTransferInternal"
+                                                            value="Xác nhận chuyển"
+                                                            id="ctl27_btnTransferInternal" class="btn btn-primary"
+                                                            style="width: 180px;">
+                                                    </center>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- /.row (main row) -->
+
+        </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer bg-background text-white">
+        <strong>Copyright &copy; 2022-2023 <a href="https://uniontek.vn" style="color: white ;">Uniontek.vn</a></strong>
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Phone:</b> 1900.88.66.33
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../plugins/sparklines/sparkline.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../plugins/moment/moment.min.js"></script>
+    <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="../plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../dist/js/pages/dashboard.js"></script>
+
+    <!-- custom js -->
+    <script src="../dist/js/custom.js"></script>
+</body>
+
+</html>

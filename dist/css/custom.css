@@ -1,0 +1,357 @@
+:root {
+  --green: #0b7a55;
+}
+body {
+  background-color: #f4f6f9 !important;
+}
+
+h3 {
+  background: radial-gradient(
+    circle,
+    rgba(255, 254, 166, 1) 0%,
+    rgb(201, 165, 80) 80%
+  );
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 2.5rem !important;
+}
+h5 {
+  background: radial-gradient(
+    circle,
+    rgba(255, 254, 166, 1) 0%,
+    rgb(201, 165, 80) 80%
+  );
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 1.5rem !important;
+}
+.img-logo {
+  text-align: center;
+}
+.img-logo img {
+  width: 60px !important;
+  height: 60px !important;
+  margin: auto;
+  float: unset !important;
+  max-height: none !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.bg-sidebar {
+  background: url(../img/sidebar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-background-main {
+  background: url(../img/img-bg.png);
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("../img/img-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-background {
+  background: url(../img/account.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-success {
+  background-color: var(--green) !important;
+}
+
+#exTab2 {
+  width: 70%;
+  max-width: 887px;
+}
+
+#exTab2 ul li {
+  text-align: center;
+}
+#exTab2 h3 {
+  color: white;
+  font-size: 1rem;
+}
+
+#chartjs {
+  width: 70%;
+  /* margin-bottom: 50px; */
+  max-width: 907px;
+}
+#myChart {
+  height: 400px !important;
+}
+#myChart1 {
+  height: 400px !important;
+}
+#myChart2 {
+  height: 400px !important;
+}
+
+#charjs ul li {
+  text-align: center;
+}
+#charjs h3 {
+  color: white;
+  font-size: 1rem;
+}
+.tab-content-chart {
+  width: 80% !important;
+}
+
+.active-tab-custom {
+  border: 2px solid var(--green);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.active-tab-custom li {
+  padding: 5px 48px;
+  transition: 0.3s;
+  margin: 0px 1px;
+  text-transform: uppercase;
+}
+.active-tab-custom li a {
+  color: var(--green);
+}
+.active-tab-custom li.active {
+  background-color: var(--green);
+  color: white;
+}
+.active-tab-custom li.active a {
+  color: white;
+}
+.active-tab-custom li:hover {
+  background-color: var(--green);
+}
+.active-tab-custom li:hover a {
+  color: white;
+}
+
+.active-tab-custom li a {
+  font-size: 1.5rem;
+}
+
+.tab-content {
+  width: 100%;
+}
+.inner p {
+  font-size: 1.5rem;
+}
+
+/* box1 */
+.content-box1 {
+  padding: 5px;
+  text-align: center;
+  padding-left: 20px;
+}
+.content-box1 h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.content-box1 p {
+  color: var(--green);
+  padding: 5px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.content-box1 p i {
+  font-size: 1.1rem;
+  padding-right: 5px;
+}
+
+.inner-box p {
+  font-weight: bold;
+}
+.inner-box h3 {
+  font-size: 2rem !important;
+}
+.inner-box .icon {
+  color: #0b7a55 !important;
+}
+.small-box .icon i {
+  font-size: 30px !important;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  padding: 10px;
+  line-height: 40px;
+  border-radius: 1000rem;
+  color: #0b7a55 !important;
+  text-align: center;
+}
+
+.boxed {
+  width: 100px;
+  height: 45px;
+  background-image: linear-gradient(
+    to left bottom,
+    rgba(255, 254, 166, 1),
+    rgb(182, 147, 65)
+  );
+  padding: 3px;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+.boxed-child {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green);
+  border-radius: inherit;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.boxed-price {
+  width: 150px;
+  height: 45px;
+  background-image: linear-gradient(
+    to left bottom,
+    rgba(255, 254, 166, 1),
+    rgb(182, 147, 65)
+  );
+  padding: 3px;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.boxed-child-price {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green);
+  border-radius: inherit;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+[class*=sidebar-dark-] .nav-sidebar>.nav-item.menu-open>.nav-link, [class*=sidebar-dark-] .nav-sidebar>.nav-item:hover>.nav-link, [class*=sidebar-dark-] .nav-sidebar>.nav-item>.nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--green);
+}
+[class*=sidebar-dark] .brand-link {
+    border-bottom: 1px solid #ffffff;
+}
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link {
+    color: #ffffff;
+}
+[class*=sidebar-dark-] .sidebar a {
+    color: #ffffff;
+}
+.custom-price h1 {
+  margin-bottom: 0px;
+}
+.custom-price button{
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+.inner-daily{
+  transition: .5s;
+  cursor: pointer;
+}
+.inner-daily.active {
+  transform: scale(0.9);
+  outline: 5px solid rgb(182, 147, 65) ;
+}
+.inner-daily:hover{
+  transform: scale(0.9);
+  outline: 5px solid rgb(182, 147, 65) ;
+
+}
+
+@media (max-width: 992px) {
+  .tab-content > .active {
+    margin-top: 120px;
+  }
+  #chartjs {
+    margin-top: 80px;
+    width: 80%;
+  }
+  .tab-content {
+    transform: scale(1.2);
+    }
+  #myChart, #myChart1, #myChart2 {
+    height: 200px !important;
+  }
+  .active-tab-custom li a {
+    font-size: 1.2rem;
+}
+.custom-code{
+    flex-wrap: wrap;
+}
+.p-4{
+    padding: 10px !important;
+}
+.boxed{
+    margin:10px;
+}
+}
+@media (min-width: 1200px) and (max-width: 1600px) { 
+    .small-box .icon {
+        display: none;
+    }
+}
+@media (max-width:600px){
+  .active-tab-custom {
+    display: block;
+}
+.active-tab-custom li {
+  padding: 5px 5px;
+  text-align: center;
+}
+#exTab2 {
+  width: 87%;
+}
+#chartjs {
+  margin-top: 0px;
+}
+.tab-content > .active {
+  margin-top: 20px;
+}
+.boxed {
+  width: 60px;
+  height: 31px;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.boxed-child{
+  font-size: 1rem;
+}
+.bg-background-main{
+  background: none;
+}
+.tab-content-chart {
+  margin-top: 40px;
+}
+.main-footer{
+  margin-top: 20px;
+}
+.custom-price h1{
+  font-size: 1.5rem;
+}
+.inner p{
+  font-size: 1.1rem;
+}
+.small-box h3{
+  font-size: 1.7rem !important;
+}
+}
+
+.animation{
+    animation: zoom 1s linear infinite alternate;
+}
+@keyframes zoom {
+    0%{transform: scale(0.9);}
+    0%{transform: scale(1.3);}
+}
